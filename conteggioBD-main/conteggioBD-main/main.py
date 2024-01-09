@@ -5,10 +5,16 @@ from gspread import Cell
 from datetime import date
 import datetime
 from PIL import Image
+from utils import wrangle
+import pickle
+import sys
+import path
 
+dir = path.Path(__file__).abspath()
+sys.append.path(dir.parent.parent)
 
-
-image = Image.open('jesap.png')
+image = './models/final_model.pkl'
+image = Image.open('BD-JeEurope/conteggioBD-main/conteggioBD-main/jesap.png')
 
 st.set_page_config(page_title='Hour Count', page_icon = image, initial_sidebar_state = 'auto')
 hide_streamlit_style = """
