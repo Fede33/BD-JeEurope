@@ -5,7 +5,6 @@ from gspread import Cell
 from datetime import date
 import datetime
 from PIL import Image
-from utils import wrangle
 import pickle
 import sys
 import path
